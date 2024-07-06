@@ -67,8 +67,8 @@ pip install -r requirements.txt
 ||
 
 ## Note: To create a new application inside apps folder
-- makdir api
-- cd api
+- makdir apis
+- cd apis
 - django-admin startapp <appname>
 
 
