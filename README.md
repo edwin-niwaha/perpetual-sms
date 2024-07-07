@@ -76,3 +76,5 @@ pip install -r requirements.txt
 npm create vite@latest frontend --template react
 - cd frontend
 - npm install axios react-router-dom jwt-decode
+- npm install @mui/material
+- npm install @mui/icons-material
