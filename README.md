@@ -74,4 +74,5 @@ pip install -r requirements.txt
 ===================================================================================================
 # React Application
 npm create vite@latest frontend --template react
-
+- cd frontend
+- npm install axios react-router-dom jwt-decode
