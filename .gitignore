@@ -162,5 +162,5 @@ cython_debug/
 #.idea/
 
 # React
-frontend/
+# frontend/
 # backend/
