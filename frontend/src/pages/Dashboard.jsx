@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
+import Footer from '../components/Footer';
 import "../styles/Dashboard.css"
 
 const Dashboard = () => {
@@ -10,6 +11,7 @@ const Dashboard = () => {
                 <h2>Dashboard</h2>
                 <p>Welcome to the Dashboard!</p>
             </div>
+            <Footer />
         </div>
     );
 };

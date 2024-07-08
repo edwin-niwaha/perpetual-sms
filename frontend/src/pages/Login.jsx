@@ -1,5 +1,6 @@
 import Form from "../components/Form"
 import NavBar from "../components/NavBar";
+import Footer from '../components/Footer';
 
 function Login() {
     return (
@@ -8,6 +9,7 @@ function Login() {
             <div className="container mt-4">
                 <Form route="/api/token/" method="login" /> {/* Include the Form component */}
             </div>
+            <Footer />
         </div>
     );
 }

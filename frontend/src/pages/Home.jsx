@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import hero from '../assets/hero.png';
 import useUser from '../hooks/useUser';
 
@@ -47,6 +48,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
