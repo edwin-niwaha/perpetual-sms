@@ -1,11 +1,11 @@
-## perpetual-sms
+# perpetual-sms
 
-# Prerequisites
+## Prerequisites
 * Python installed
 * Node.js and npm installed
 * Create a virtual environment for Python (optional but recommended)
 
-# Create / Prepare Your Environment
+## Create / Prepare Your Environment
 When you’re ready to start your new Django web application, create a new folder and navigate into it. In this folder, you’ll set up a new virtual environment using your command line:
 
 - mkdir backend
@@ -13,19 +13,19 @@ When you’re ready to start your new Django web application, create a new folde
 ```bash   
 $ python -m venv .venv
 
-    # Shell
+    ## Shell
 $ python3 -m venv .venv
 ```
 
-# Activate the virtual environment:
+## Activate the virtual environment:
   ```bash
     source .venv/Scripts/activate
     
-  # Shell
+  ## Shell
     source .venv/bin/activate
 ```
 
-# Install Django and Pin Your Dependencies
+## Install Django and Pin Your Dependencies
 Once you’ve created and activated your Python virtual environment, you can install Django into this dedicated development workspace:
 (.venv) $
 pip install django
@@ -39,16 +39,16 @@ pip install django-cors-headers
 
 ## Add to INSTALLED_APPS in myproject/settings.py:
 ```INSTALLED_APPS = [
-     # Local apps
+     ## Local apps
      'api.appname',
 
-     # Third party libraries
+     ## Third party libraries
      'corsheaders',
      'rest_framework',
 ]
 ```
 
-# Install python libraries
+## Install python libraries
 - (.venv) $
 pip freeze > requirements.txt
 
@@ -56,13 +56,13 @@ pip freeze > requirements.txt
 - (.venv) $ 
 pip install -r requirements.txt
 
-# Set Up a Django Project
+## Set Up a Django Project
 - (.venv) $ django-admin startproject <projectname>
 
 * Note: If you want to avoid creating the additional top-level project folder, you can add a dot (.) at the end of the django-admin startproject command:
 - (.venv) $ django-admin startproject <projectname> .
 
-# Start a Django App
+## Start a Django App
 - (.venv) $ python manage.py startapp <appname>
 
 ## Note: To create a new application inside apps folder
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 
 ===================================================================================================
-# React Application
+## React Application
 npm create vite@latest frontend --template react
 - cd frontend
 - npm install axios react-router-dom jwt-decode
