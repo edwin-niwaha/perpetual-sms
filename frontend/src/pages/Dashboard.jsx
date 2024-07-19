@@ -2,6 +2,7 @@ import React from 'react';
 import { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill } from 'react-icons/bs';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import TopBar from '../components/TopBar';
+import Footer from '../components/Footer';
 
 const data = [
   { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
@@ -63,6 +64,7 @@ const Dashboard = () => {
           </ResponsiveContainer>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
