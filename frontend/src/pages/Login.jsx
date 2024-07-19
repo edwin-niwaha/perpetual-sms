@@ -1,11 +1,11 @@
-import Form from "../components/Form"
-import NavBar from "../components/NavBar";
+import Form from "../components/UserForm"
+import TopBar from "../components/TopBar";
 import Footer from '../components/Footer';
 
 function Login() {
     return (
         <div>
-            <NavBar /> {/* Include the NavBar component */}
+            <TopBar /> {/* Include the TopBar component */}
             <div className="container mt-4">
                 <Form route="/api/token/" method="login" /> {/* Include the Form component */}
             </div>

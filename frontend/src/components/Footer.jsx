@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-4">
-                    <p>&copy; {new Date().getFullYear()} Perpetual SMS. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Perpetual SDMS. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

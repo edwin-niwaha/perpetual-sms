@@ -78,3 +78,4 @@ npm create vite@latest frontend --template react
 - npm install axios react-router-dom jwt-decode
 - npm install @mui/material
 - npm install @mui/icons-material
+- npm install react-icons

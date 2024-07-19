@@ -10,7 +10,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo} alt="Logo" className="logo-img" style={{ maxHeight: '40px' }} /> Perpetual SMS
+                    <img src={logo} alt="Logo" className="logo-img" style={{ maxHeight: '40px' }} />SDMS
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +18,18 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact</Link>
-                        </li>
                         {user && (
+                            <>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/notes-add">Add Note</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/notes-list">View Notes</Link>
+                            </li>                                                                                  
+                            </>
                         )}
                     </ul>
                     <ul className="navbar-nav ml-auto">
