@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Offcanvas, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsBoxArrowRight } from 'react-icons/bs';
+import { BsBoxArrowRight, BsGear, BsBarChartFill , BsCurrencyDollar , BsCloudDownload, BsGiftFill, BsPersonPlusFill, BsEmojiSmile, BsPerson } from 'react-icons/bs';
 import useUser from '../hooks/useUser';
 import logo from '../assets/logo.png';
 
@@ -35,14 +35,14 @@ const NavBar = () => {
                 {user && (
                     <>
                         <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                        <Navbar.Offcanvas style={{ width: '20%' }} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
+                        <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id="offcanvasNavbarLabel">--- SDMS ---</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <hr style={{ color: 'blue', backgroundColor: 'blue', height: 1 }} />
-                                    <NavDropdown title="Manage Child" id="manageChildDropdown">
+                                    <NavDropdown title={<span><BsEmojiSmile    style={{ marginRight: '0.5em' }} /> Manage Child</span>} id="manageChildDropdown">
                                         <NavDropdown.Item href="/register_child">Register Child</NavDropdown.Item>
                                         <NavDropdown.Item href="/child_master_list">Child Details</NavDropdown.Item>
                                         <NavDropdown.Item href="/update_picture">Profile Picture</NavDropdown.Item>
@@ -50,44 +50,44 @@ const NavBar = () => {
                                         <NavDropdown.Item href="/child_correspondence">Correspondence</NavDropdown.Item>
                                         <NavDropdown.Item href="/child_incident">Child Incidence</NavDropdown.Item>
                                         <NavDropdown.Item href="/child_departure">Child Departure</NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> 
 
-                                    <NavDropdown title="Manage Staff" id="manageStaffDropdown">
+                                    <NavDropdown title={<span><BsPerson   style={{ marginRight: '0.5em' }} /> Manage Staff</span>} id="manageStaffDropdown">
                                         <NavDropdown.Item href="/register_staff">Register Staff</NavDropdown.Item>
                                         <NavDropdown.Item href="/staff_list">Staff Details</NavDropdown.Item>
                                         <NavDropdown.Item href="/staff_departure">Staff Departure</NavDropdown.Item>
                                     </NavDropdown>
 
-                                    <NavDropdown title="Manage Sponsor" id="manageSponsorDropdown">
+                                    <NavDropdown title={<span><BsPersonPlusFill   style={{ marginRight: '0.5em' }} /> Manage Sponsor</span>} id="manageSponsorDropdown">
                                         <NavDropdown.Item href="/register_sponsor">Register Sponsor</NavDropdown.Item>
                                         <NavDropdown.Item href="/sponsor_list">Sponsor Details</NavDropdown.Item>
                                         <NavDropdown.Item href="/sponsor_departure">Sponsor Departure</NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> 
 
-                                    <NavDropdown title="Sponsorship" id="sponsorshipDropdown">
+                                    <NavDropdown title={<span><BsGiftFill  style={{ marginRight: '0.5em' }} /> Sponsorship</span>} id="sponsorshipDropdown">
                                         <NavDropdown.Item href="/child_sponsorship">Child Sponsorship</NavDropdown.Item>
                                         <NavDropdown.Item href="/staff_sponsorship_create">Staff Sponsorship</NavDropdown.Item>
                                     </NavDropdown>
 
-                                    <NavDropdown title="Contributions" id="contributionsDropdown">
+                                    <NavDropdown title={<span><BsCurrencyDollar  style={{ marginRight: '0.5em' }} /> Contributions</span>} id="contributionsDropdown">
                                         <NavDropdown.Item href="/child_sponsor_payment">Child Contributions</NavDropdown.Item>
                                         <NavDropdown.Item href="/staff_sponsor_payment">Staff Contributions</NavDropdown.Item>
                                     </NavDropdown>
 
                                     <hr style={{ color: 'blue', backgroundColor: 'blue', height: 1 }} />
-                                    <NavDropdown title="Extras" id="extrasDropdown">
+                                    <NavDropdown title={<span><BsCloudDownload style={{ marginRight: '0.5em' }} /> Extras</span>} id="extrasDropdown">
                                         <NavDropdown.Item href="#action3">Clients</NavDropdown.Item>
                                         <NavDropdown.Item href="#action3">Policies</NavDropdown.Item>
                                         <NavDropdown.Item href="#action3">E-books</NavDropdown.Item>
                                         <NavDropdown.Item href="#action3">Manual</NavDropdown.Item>
                                     </NavDropdown>
 
-                                    <NavDropdown title="Reports" id="reportsDropdown">
+                                    <NavDropdown title={<span><BsBarChartFill  style={{ marginRight: '0.5em' }} /> Reports</span>} id="reportsDropdown">
                                         <NavDropdown.Item href="#action3">Individual</NavDropdown.Item>
                                         <NavDropdown.Item href="#action3">General</NavDropdown.Item>
                                     </NavDropdown>
 
-                                    <NavDropdown title="Settings" id="settingsDropdown">
+                                   <NavDropdown title={<span><BsGear style={{ marginRight: '0.5em' }} /> Settings</span>} id="settingsDropdown">
                                         <NavDropdown.Item href="#action3">Profile</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">Feedback</NavDropdown.Item>
                                         <NavDropdown.Item href="#action4">Bulk Import</NavDropdown.Item>
@@ -96,7 +96,7 @@ const NavBar = () => {
                                     <hr style={{ color: 'blue', backgroundColor: 'blue', height: 1 }} />
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="/logout">
-                                        Logout <BsBoxArrowRight style={{ marginLeft: '5px', fontSize: '1rem' }} />
+                                        <BsBoxArrowRight style={{ marginLeft: '5px', fontSize: '1rem' }} /> Logout
                                     </NavDropdown.Item>
                                 </Nav>
                             </Offcanvas.Body>
